@@ -6,3 +6,14 @@ body {
 a {
   color: #00B7FF;
 }
+
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;    
+  text-align: center;
+}
+
+.background
+{
+    background-color: #456268;
+}
