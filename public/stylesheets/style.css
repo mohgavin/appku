@@ -10,36 +10,46 @@ body {
 
  /* Add a black background color to the top navigation */
  .topnav {
-  background-color: #333;
+  position: fixed;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+  font-family: 'Hahmlet';font-size: 20px;
   overflow: hidden;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  top:0;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #000000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  top:0;
+  border-radius: 5px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: rgb(87, 87, 87);
   color: white;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #9dabff;
   color: white;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
-  display: none;
+  display:none;
+  font-size: 30px;
 }
 
  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -66,14 +76,14 @@ body {
   }
 }
 
-/* Javascipt function to Make Responsive Top Navigation*/
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-</script>
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
