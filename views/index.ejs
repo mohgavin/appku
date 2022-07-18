@@ -24,40 +24,39 @@
 
   <body class="background">
     <nav class="topnav" id="myTopnav">
-      <div class="topnav-left">
 
-      <a class="active" href="/">Home</a> 
-      <a href="/Optical Character Recognition">OCR</a>
-      <a href="/VPN">VPN</a>
-      <a href="/Torrent">Torrent</a>
-      <a href="/Tentang">Tentang Kita</a>
-      <a href="/Cara Pembayaran">Cara Pembayaran</a>
-      <a href="/ClientArea">Client Area</a>
-      
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">  
-        <i class="fa fa-bars"></i>  
-      </a>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+      </label>
+
+      <ul class="menu">
+        <div style="float:left">
+          Logo Here
+        </div>
+        <li><a class="active" href="/">Home</a></li>
+        <li><a href="/Optical Character Recognition">OCR</a></li>
+        <li><a href="/VPN">VPN</a></li>
+        <li><a href="/Torrent">Torrent</a></li>
+        <li><a href="/Cara Pembayaran">Cara Pembayaran</a></li>
+        <li><a href="/ClientArea">Client Area</a></li>
+      </ul>
     </nav>
     
-    <article>
+    <article class="content">
       <h1><%= title %></h1>
       <p>Welcome to <%= title %></p>
-      </article>
       
-      <article>
       <h2>Mozilla Firefox</h2>
       <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
-      </article>
       
-      <article>
       <h2>Microsoft Edge</h2>
       <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
       </article> 
 
       <input type = "button" onclick = "myFunctiona()" value = "Display">
 
-    <footer>
+    <footer class="footer"  >
       <p>Author: Hege Refsnes<br>
       <a href="mailto:hege@example.com">hege@example.com</a></p>
     </footer>
