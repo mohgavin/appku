@@ -10,11 +10,14 @@ body {
     background-color: #ffffff;
 }
 
+.logo {
+  margin: 0 0 0 .45em;
+}
  /* Add Grey color to the top navigation */
- .topnav {
+.topnav {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   background: linear-gradient(to left, #8527ff, #329cff);
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
   font-family: 'Hahmlet';font-size: 20px;color:white;
