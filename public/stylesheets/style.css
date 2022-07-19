@@ -11,7 +11,13 @@ body {
 }
 
 .logo {
-  margin: 0 0 0 .45em;
+  object-fit: contain;
+}
+
+.logo1 {
+  max-width: 80%;
+  max-height: 80%;
+  border-top: 5px;
 }
  /* Add Grey color to the top navigation */
 .topnav {
@@ -19,7 +25,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   background: linear-gradient(to left, #8527ff, #329cff);
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+  box-shadow: 0 10px 4px 0 rgba(0,0,0,.1);
   font-family: 'Hahmlet';font-size: 20px;color:white;
   height:60px;
 }

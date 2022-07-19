@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Obis Network - Home</title>
+    <meta name="description" content="Obis Network menjual layanan seperti Optical Character Recognition,  Seeder-Leecher Torrent, 
+    dan Service Lainnya. Obis juga menerima pembayaran Lokal Bank-Bank Indonesia dan Bitcoin">
+    <meta name="author" content="Obist Network">
+    <meta property="og:url" content="https://Obis.net/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Obis Network - Home">
+    <meta property="og:image" content="https://Obis.net/public/images/untitled.png">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@ObisNetwork"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hahmlet">
+    <script type="text/javascript" src="javascripts/responsive.js"></script>
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <p>Never Will be never</p>
-    <p>Lorem Ipsum del Oktavianus</p>
-    <script></script>
+
+  <body class="background">
+    <nav class="topnav" id="myTopnav">
+      <img class= 'logo' src="images/Untitled.png">
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+      </label>
+
+      <ul class="menu">
+        <li><a href="/"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a></li>
+        <li><a href="/OCR"><i class="fa fa-camera"></i>&nbsp;&nbsp;OCR</a></li>
+        <li><a href="/VPN"><i class="fa fa-globe"></i>&nbsp;&nbsp;VPN</a></li>
+        <li><a href="/Torrent"><i class="fa fa-percent"></i>&nbsp;&nbsp;Torrent</a></li>
+        <li><a href="/Pembayaran"><i class="fa fa-money"></i>&nbsp;&nbsp;Cara Pembayaran</a></li>
+        <li><a href="/ClientArea"><i class="fa fa-fw fa-user"></i>&nbsp;Client Area</a></li>
+      </ul>
+    </nav>
+    
+    <article class="content">
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %></p>
+      
+      <h2>Mozilla Firefox</h2>
+      <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+      
+      <h2>Microsoft Edge</h2>
+      <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+      </article> 
+
+      <input type = "button" onclick = "myFunctiona()" value = "Display">
+
+    <footer class="footer"  >
+      <p>Author: Hege Refsnes<br>
+      <a href="mailto:hege@example.com">hege@example.com</a></p>
+    </footer>
+    
+    </div>
   </body>
 </html>
-
-
