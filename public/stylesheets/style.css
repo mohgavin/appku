@@ -30,8 +30,8 @@ body {
   z-index: 1;
   justify-content: space-between;
   background: linear-gradient(to right,#382769 52%, #1f68ad);
-  font-family: 'Hahmlet';font-size: 20px;color:white;
-  height:60px;
+  font-family: 'Hahmlet';font-size: 28px;color:white;
+  height:80px;
 }
 
 /* Style the links inside the navigation bar */
@@ -131,25 +131,20 @@ body {
   display:block;
 }
 
+p {
+  font-family: 'Hahmlet';font-size: 18px;color:white;padding-left: 10rem;
+}
+
 h1 {
-  font-family: 'Hahmlet';font-size: 30px;color:white;
-  padding-left: 100px;
-  font-weight: bold;
+  font-family: 'Hahmlet';font-size: 30px;color:white;font-weight: bold;padding-left: 8rem;
 }
 
 h2 {
-  font-family: 'Hahmlet';font-size: 22px;color:white;
-  padding-left: 150px;
-}
-
-p {
-  font-family: 'Hahmlet';font-size: 18px;color:gray;
-  padding-left: 150px;
+  font-family: 'Hahmlet';font-size: 22px;color:white;font-weight: bold
 }
 
 h3 {
-  font-family: 'Hahmlet';font-size: 18px;color:gray;
-  padding-left: 150px;
+  font-family: 'Hahmlet';font-size: 18px;color:gray;display:flex;
 }
 
 error {
@@ -168,14 +163,20 @@ error {
   color: white;
   text-align: left;
   padding-top: 1rem;
-  padding-left: 5rem;
+  padding-left: 10rem;
   padding-right: 20rem;
   padding-bottom: 2rem;
+  flex-grow: 1;
 }
 
 .ft-main-item {
-  padding: 1.25rem;
-  min-width: 12.5rem;
+  padding: 1rem;
+  min-width: 5rem;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 100;
 }
 
 .ft-title {
@@ -229,5 +230,21 @@ error {
   .footer {
     position: relative;
     flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 6rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+    justify-content: flex-start;
 	}
+
+  .ft-title {
+    color: #fff;
+    font-family: 'Hahmlet';
+    font-size: 18px;color:white;
+    padding-bottom: 0.1rem;
+  }
+
+  h3 {
+    font-family: 'Hahmlet';font-size: 16px;color:gray;display:flex;
+  }
 }
