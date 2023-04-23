@@ -15,9 +15,9 @@ body {
 }
 
 .centered {
-  padding-top: 45px;
+  padding-top: 20px;
   text-align: center;
-  font-size: 30px; font-family: Helvetica;
+  font-size: 14px; font-family: Helvetica;
   color:rgb(0, 35, 151);
 }
 
@@ -41,7 +41,7 @@ body {
   text-align: center;
   padding: 14px 14px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 14px;
   top:0;
   color:white;
   border-radius: 5px;
@@ -132,19 +132,23 @@ body {
 }
 
 p {
-  font-family: 'Hahmlet';font-size: 18px;color:white;padding-left: 10rem;
+  font-family: 'Hahmlet';font-size: 14px;color:white;padding-left: 10rem;
 }
 
 h1 {
-  font-family: 'Hahmlet';font-size: 30px;color:white;font-weight: bold;padding-left: 8rem;
+  font-family: 'Hahmlet';font-size: 22px;color:white;font-weight: bold;padding-left: 6rem;
 }
 
 h2 {
-  font-family: 'Hahmlet';font-size: 22px;color:white;font-weight: bold
+  font-family: 'Hahmlet';font-size: 14px;color:white;font-weight: bold
 }
 
 h3 {
-  font-family: 'Hahmlet';font-size: 18px;color:gray;display:flex;
+  font-family: 'Hahmlet';font-size: 14px;color:gray;display:flex;
+}
+
+h4 {
+  font-family: 'Hahmlet';font-size: 14px;color:gray;display:flex;
 }
 
 error {
@@ -161,32 +165,33 @@ error {
   justify-content: space-evenly;
   color: white;
   text-align: left;
-  padding-top: 1rem;
-  padding-left: 10rem;
-  padding-right: 20rem;
-  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   flex-grow: 1;
 }
 
 .ft-main-item {
-  padding: 1rem;
+  padding: 0.75rem;
+  font-size: 12px;color:white;
   min-width: 5rem;
 }
 
 .break {
   flex-basis: 100%;
-  padding-left: 5rem;
+  padding-left: 3rem;
+  padding-right: 2rem;
   height: 100;
 }
 
 .ft-title {
   color: #fff;
-  font-family: 'Hahmlet';
-  font-size: 24px;color:white;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 16px;color:white;
   padding-bottom: 0.625rem;
 }
 
-@media  (max-width: 1100px) {
+@media  (max-width: 900px) {
   .menu-button-container {
     display: flex;
     padding-right: 25px;
@@ -231,20 +236,31 @@ error {
     position: relative;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-left: 6rem;
-    padding-right: 5rem;
-    padding-bottom: 1rem;
-    justify-content: flex-start;
+    display:inline-flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex-direction: row;
+    justify-content: space-evenly;
 	}
 
   .ft-title {
     color: #fff;
     font-family: 'Hahmlet';
-    font-size: 18px;color:white;
+    font-size: 14px;color:white;
     padding-bottom: 0.1rem;
   }
 
   h3 {
-    font-family: 'Hahmlet';font-size: 16px;color:gray;display:flex;
+    font-family: 'Hahmlet';font-size: 12px;color:gray;display:flex;
+  }
+
+  h4 {
+    font-family: 'Hahmlet';font-size: 12px;color:gray;display:flex;
+  }
+
+  .break {
+    flex-basis: 100%;
+    padding-left: 1rem;
+    height: 100;
   }
 }
